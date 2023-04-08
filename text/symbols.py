@@ -63,8 +63,8 @@ SYMBOLS["git"] = BASE_SYMBOLS + IPA["git"]
 SYMBOLS["str"] = BASE_SYMBOLS + IPA["str"]
 SYMBOLS["eng"] = BASE_SYMBOLS + ARPA_IPA + _arpabet
 # NOTE: Use these symbols for pre-trained model checkpoints from the original repo
-#SYMBOLS["eng"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences
-#SYMBOLS["zh"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences
+SYMBOLS["eng"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences
+SYMBOLS["zh"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences
 
 # # Export all symbols:
 CHARS = (

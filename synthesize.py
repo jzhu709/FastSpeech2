@@ -3,13 +3,13 @@ import re
 import argparse
 from string import punctuation
 import json
-
+from g2p_en import G2p
+from g2p import make_g2p
 import torch
 import yaml
 import numpy as np
 from torch.utils.data import DataLoader
-from g2p_en import G2p
-from g2p import make_g2p
+
 from pypinyin import pinyin, Style
 
 from utils.model import get_model, get_vocoder
