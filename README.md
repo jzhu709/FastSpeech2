@@ -34,6 +34,8 @@ Downgrade scipy to version 1.4.1 and resampy to 0.3.1
 
 May also need to install torch manually 1.7.0+cu110
 
+TextGrids should be put in preprocessed_data/LJSpeech/TextGrid/eng/LJSpeech
+
 # Quickstart
 
 ## Dependencies
