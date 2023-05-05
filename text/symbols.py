@@ -26,6 +26,7 @@ _punctuation = "!'(),.:;? "
 _moh_punctuation = "!(),.;? "
 _special = "-"
 _letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+# _letters = "AEIOUNGKMPRTVaeioungkmprtv'ĀāĒēĪīŌōŪū"
 _silences = ["sp", "spn", "sil"] # ["sp", "spn", "sil", "@sp", "@spn", "@sil"] can be used as well
 
 # Prepend "@" to ARPAbet symbols to ensure uniqueness (some are the same as uppercase letters):
@@ -37,6 +38,7 @@ MAPPINGS = {
     "git": {"norm": make_g2p("git", "git-equiv"), "ipa": make_g2p("git", "git-ipa")},
     "moh": {"norm": make_g2p("moh", "moh-equiv"), "ipa": make_g2p("moh", "moh-ipa")},
     "str": {"norm": make_g2p("str", "str-equiv"), "ipa": make_g2p("str", "str-ipa")},
+    # "cim": {"norm": make_g2p("cim", "cim-equiv"), "ipa": make_g2p("cim", "cim-ipa")}
 }
 
 IPA = {}
@@ -62,6 +64,7 @@ SYMBOLS["moh"] = MOH_BASE_SYMBOLS + IPA["moh"]
 SYMBOLS["git"] = BASE_SYMBOLS + IPA["git"]
 SYMBOLS["str"] = BASE_SYMBOLS + IPA["str"]
 SYMBOLS["eng"] = BASE_SYMBOLS + ARPA_IPA + _arpabet
+# SYMBOLS["cim"] = BASE_SYMBOLS + IPA["cim"]
 # NOTE: Use these symbols for pre-trained model checkpoints from the original repo
 SYMBOLS["eng"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences
 SYMBOLS["zh"] = [_pad] + list(_special) + list(_punctuation) + list(_letters) + _arpabet + _pinyin + _silences

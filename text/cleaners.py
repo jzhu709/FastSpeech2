@@ -101,3 +101,4 @@ for k, v in MAPPINGS.items():
 
 CLEANERS["eng"] = english_cleaners
 CLEANERS["zh"] = transliteration_cleaners
+CLEANERS["cim"] = basic_cleaners
